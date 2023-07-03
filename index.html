@@ -1,47 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Convertidor de Divisas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Convertidor de Divisas</title>
 </head>
 <body>
   <h1>Convertidor de Divisas</h1>
-  
+
   <div>
     <label for="amount">Monto:</label>
-    <input type="text" id="amount">
+    <input type="number" id="amount" step="0.01" min="0">
   </div>
 
   <div>
-    <label for="from">Desde:</label>
+    <label for="from">De:</label>
     <select id="from">
       <option value="USD">USD</option>
       <option value="EUR">EUR</option>
       <option value="ARS">ARS</option>
       <option value="GBP">GBP</option>
       <option value="JPY">JPY</option>
-      
     </select>
   </div>
 
   <div>
-    <label for="to">Hasta:</label>
+    <label for="to">A:</label>
     <select id="to">
       <option value="USD">USD</option>
       <option value="EUR">EUR</option>
       <option value="ARS">ARS</option>
       <option value="GBP">GBP</option>
       <option value="JPY">JPY</option>
-      
     </select>
   </div>
 
   <button id="convertBtn">Convertir</button>
 
   <div id="result"></div>
-<script src="js/script.js"></script>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
+
+
